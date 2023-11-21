@@ -9,6 +9,16 @@
     justify-content: center;
     align-items: center;
 
-    background-color: lightgreen;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(0, 238, 255) 51%, rgba(0,0,0,1) 100%);
 
+}
+
+.profileDesign h2 a{
+    color:red;
+    text-align: justify;
+}
+
+.profileDesign img{
+    border-radius: 20px;
 }
