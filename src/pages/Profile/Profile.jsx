@@ -9,14 +9,13 @@ export const Profile = () => {
 
             </img>
                 <h2>
-                    <a>Pelicula 1</a>
+                    <a>Este es mi perfil</a>
                 </h2>
                 <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae exercitationem, numquam vero quaerat error eum quia ducimus dignissimos similique amet! Asperiores cumque illo doloribus numquam iusto quasi officiis maiores reprehenderit.
-
+                    Descripción del perfil 1
                 </p>
                 <p>
-                    presupuesto pelicula 1
+                    Descripción del perfil 2
                 </p>
         </div>
     )
