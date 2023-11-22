@@ -9,7 +9,8 @@
     justify-content: center;
     align-items: center;
 
-    background-color: lightpink;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgb(87, 87, 87) 51%, rgba(0,0,0,1) 100%);;
 
 }
 
@@ -20,6 +21,9 @@
 
     border-radius: 1em;
     margin-bottom: 1em;
+
+    background-color: white;
+    color: black;
 
     border: 0.2em solid darkblue;
 }
