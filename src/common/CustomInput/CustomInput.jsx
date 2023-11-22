@@ -11,6 +11,6 @@ export const CustomInput = ({type, name, placeholder, design, functionChange}) =
             placeholder={placeholder}
             onChange={(e)=>functionChange(e)}
         />
-
+        
     )
 }

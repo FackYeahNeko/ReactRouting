@@ -24,6 +24,8 @@ export const Login = () => {
 
     return (
         <div className="loginDesign">
+            Escribe tu usuario:
+
             <CustomInput 
                 type={"text"}
                 name={"username"}
@@ -31,6 +33,8 @@ export const Login = () => {
                 design={"inputDesign"}
                 functionChange={InputHandler}
             />
+            Escribe tu contraseña:
+            
             <CustomInput 
                 type={"password"}
                 name={"password"}
