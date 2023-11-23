@@ -72,6 +72,8 @@ export const Login = () => {
                     design={"inputDesign"}
                     //Pasamos la función al hijo desde aqui (el padre)
                     functionChange={InputHandler}
+                    functionCheck={()=>{}}
+
                 />
                 Escribe tu contraseña:
                 
@@ -82,6 +84,8 @@ export const Login = () => {
                     design={"inputDesign"}
                     //Pasamos la función al hijo desde aqui (el padre)
                     functionChange={InputHandler}
+                    functionCheck={()=>{}}
+
                 />
                 <div>{mensajeError}</div>
                 <div className='buttonDesign' onClick={logMe}>Log me!</div></>)
