@@ -2,7 +2,7 @@ import { useState } from "react"; //importas inicialmente la funcionalidad de us
 
 import "./contador.css"
 
-export const Button = () => {
+export const Counter = () => {
 
   function Button()  // creas el boton
 {  
