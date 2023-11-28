@@ -26,6 +26,10 @@ export const Header = () => {
                 destination={"/contact"}
                 name={"Contacto"}
             />
+            <ButtonNav 
+                destination={"/Contador"}
+                name={"Contador"}
+            />
         </div>
     )
 }

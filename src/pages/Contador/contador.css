@@ -1,0 +1,4 @@
+.contadorDesign {
+    display:flex;
+    flex-direction: column;
+}

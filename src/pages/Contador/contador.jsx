@@ -1,6 +1,10 @@
 import { useState } from "react"; //importas inicialmente la funcionalidad de usestate de react
 
-function Button()  // creas el boton
+import "./contador.css"
+
+export const Button = () => {
+
+  function Button()  // creas el boton
 {  
   const [clicks, setClicks] = useState(0);  // seteas los clicks iniciales
   const [increaseBy, setInc] = useState(1);  // setea el valor de incremento
@@ -11,8 +15,8 @@ function Button()  // creas el boton
     setClicks(clicks + increaseBy); // aqui usas el setclick, para cambiar la variable de clicks, y añadir el valor de incremento 
   }
   return (
-    <main>
-      <input
+    <main className="contadorDesign">
+      <input 
         type="number" //creas el tipo de input , number limita el valor a numeros solo.
         onChange={(ev) => setInc(Number(ev.target.value))} //cuando detecta cambios en el input, se ejecuta la función setInc
         value={increaseBy}
@@ -25,5 +29,4 @@ function Button()  // creas el boton
     </main>
   );
 }
-
-export default Button; // exportamos el componente Button
+}
