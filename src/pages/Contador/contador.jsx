@@ -1,32 +1,29 @@
-import { useState } from "react"; //importas inicialmente la funcionalidad de usestate de react
+import {useState} from "react";
 
-import "./contador.css"
+import "./Contador.css"
 
-export const Counter = () => {
+export const Contador = () => {
+    const [clicks, setClick] = useState(0); //Creamos la variable inicial y le ponemos un 0 con el setstate
+    const [incremeneto, setIncremeneto] = useState(1); //Creamos la variable inremento y le ponemos un 1 con el setstate
 
-  function Button()  // creas el boton
-{  
-  const [clicks, setClicks] = useState(0);  // seteas los clicks iniciales
-  const [increaseBy, setInc] = useState(1);  // setea el valor de incremento
-  console.log("increaseBy", increaseBy); // aqui enseñas en consola el valor 
+    function handleClick(){
+        setClick(clicks + incremento);  // creamos la funion que juntará clicks e incrementos.
+    }
 
-  function handleClick() //creas la función handleClick
-  {
-    setClicks(clicks + increaseBy); // aqui usas el setclick, para cambiar la variable de clicks, y añadir el valor de incremento 
-  }
-  return (
-    <main className="contadorDesign">
-      <input 
-        type="number" //creas el tipo de input , number limita el valor a numeros solo.
-        onChange={(ev) => setInc(Number(ev.target.value))} //cuando detecta cambios en el input, se ejecuta la función setInc
-        value={increaseBy}
-      />
-      <button
-        onClick={handleClick} //llamas a la funcion handleClick cuando haces click (on click)
-        >
-        Clicked {clicks} times
-      </button>
-    </main>
-  );
-}
-}
+    return (
+        <main>
+          <input
+            type="number"
+            onChange={(ev) => setIncremento(Number(ev.target.value))}
+            value={incremento}
+          />
+          <button
+            onClick={handleClick}
+          >
+            Clicked {clicks} times
+          </button>
+        </main>
+      );
+    }
+
+;

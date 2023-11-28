@@ -2,24 +2,30 @@ import { useState } from "react"; //importas inicialmente la funcionalidad de us
 
 import "./todo.css"
 
-const todo = [
+const TodoEstadoInicial = [
 {
-    ID: ,
+    ID: 1,
     nombre: "Juan",
     completado: false,
 },
 {
-    ID: ,
+    ID: 2,
     nombre: "Pedro",
     completado: false,
 },
 {
-    ID: ,
+    ID: 3,
     nombre: "Maria",
     completado: false,
 }];
 
 function todo () {
-    const [todo, setTodo] = useState(todo); // seteas los todos iniciales
+    const [todo, setTodo] = useState(TodoEstadoInicial); // seteas los todos iniciales
+
+
+
     
 }
+
+
+
